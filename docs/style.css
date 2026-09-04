@@ -24,16 +24,8 @@ header.site-header{
   padding:22px 0 18px;
 }
 .brand{display:flex;align-items:center;gap:12px;}
-.brand .mark{
-  width:46px;height:46px;border-radius:50%;
-  background:radial-gradient(circle at 32% 28%,#FFE9BE,var(--gold) 55%,var(--coral) 100%);
-  box-shadow:0 0 0 4px var(--coral-dim);
-  flex-shrink:0;
-  display:flex;align-items:center;justify-content:center;
-}
-.brand .mark svg{width:24px;height:24px;display:block;}
-.brand .name{font-size:22px;font-weight:700;letter-spacing:0.02em;}
-.brand .tagline{font-size:12.5px;color:var(--ink-dim);margin-top:2px;}
+.brand .name{font-size:27px;font-weight:900;letter-spacing:0.01em;color:var(--coral);}
+.brand .tagline{font-size:12.5px;color:var(--ink-dim);margin-top:3px;font-weight:500;}
 nav.site-nav{margin-top:14px;display:flex;gap:18px;font-size:13.5px;font-weight:700;}
 nav.site-nav a{color:var(--ink);}
 
