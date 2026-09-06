@@ -11,6 +11,35 @@
   --gold:#F2A94E;
   --shadow:0 6px 24px rgba(58,46,40,0.08);
 }
+
+.live-sale-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(90deg, var(--coral-dim), var(--cream-2));
+  border: 1px solid var(--coral);
+  border-radius: 12px;
+  padding: 10px 16px;
+  margin: 14px 0 0;
+  font-size: 13.5px;
+  flex-wrap: wrap;
+}
+.live-sale-banner .badge {
+  background: var(--coral);
+  color: #fff;
+  font-weight: 700;
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  letter-spacing: 0.03em;
+  flex-shrink: 0;
+}
+.live-sale-banner a {
+  color: var(--teal);
+  font-weight: 600;
+  text-decoration: none;
+}
+.live-sale-banner a:hover { text-decoration: underline; }
 *{box-sizing:border-box;}
 html,body{margin:0;padding:0;background:var(--cream);color:var(--ink);font-family:"Zen Maru Gothic","Noto Sans JP",sans-serif;line-height:1.8;}
 img{max-width:100%;display:block;}
