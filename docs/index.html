@@ -3,95 +3,243 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>おかいものびより | 楽天お買い物マラソン攻略ノート</title>
-<meta name="description" content="楽天お買い物マラソン・スーパーセールのたびに、テーマ別で「何を買うべきか」をまとめる暮らしのお買い物ノート。">
+<title>おかいものびより | 楽天で「何を買うか」に迷わない、お買いものノート</title>
+<meta name="description" content="楽天お買い物マラソン・スーパーセールにあわせて、暮らしに役立つ商品や買い方をテーマ別に整理するお買いものノート。">
+<meta name="theme-color" content="#fffaf5">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Zen+Old+Mincho:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header class="site-header">
-  <div class="wrap">
-    <div class="brand">
-      <div>
-        <div class="name">おかいものびより</div>
-        <div class="tagline">楽天お買い物マラソン攻略ノート</div>
-      </div>
-    </div>
-    <nav class="site-nav">
-      <a href="index.html">ホーム</a>
-      <a href="articles/marathon-guide.html">マラソン攻略</a>
-      <a href="articles/storage-review.html">収納・季節の見直し</a>
+  <div class="site-header__inner">
+    <a class="brand" href="index.html" aria-label="おかいものびより ホーム">
+      <span class="brand-mark" aria-hidden="true">⌂</span>
+      <span>
+        <strong class="brand-name">おかいものびより</strong>
+        <small class="brand-tagline">暮らしがちょっと好きになる、楽天お買いものノート</small>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="メインナビゲーション">
+      <a class="is-active" href="index.html">ホーム</a>
+      <a href="#popular">売れ筋・注目</a>
+      <a href="#categories">カテゴリ</a>
+      <a href="#guides">セール攻略</a>
+      <a href="articles/storage-review.html">収納・暮らし</a>
     </nav>
+    <a class="header-cta" href="#guides">読みものを見る <span>→</span></a>
   </div>
 </header>
 
-<div class="wrap">
-  <div class="live-sale-banner">
-    <span class="badge">開催中</span>
-    <span>楽天スーパーSALE、9月11日(金)1:59まで — <a href="articles/marathon-vs-supersale.html">お買い物マラソンとの違いを先にチェック→</a></span>
-  </div>
-  <section class="hero">
-    <div class="eyebrow">Rakuten Shopping Notes</div>
-    <h1>楽天のセール、<br>「いつ」より「何を買うか」で迷わない。</h1>
-    <p>
-      お買い物マラソンやスーパーセールの日程はカレンダーを見ればわかる。
-      でも本当に知りたいのは「このタイミングで何を買うとお得か」。
-      一人暮らし・共働き家庭・季節の変わり目など、テーマ別にじっくり選んだ
-      おすすめをまとめていきます。
-    </p>
+<main>
+  <section class="hero-shell">
+    <div class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> RAKUTEN SHOPPING NOTES</p>
+        <h1>楽天のセール、<br><em>「いつ」</em>より<em>「何を買うか」</em>で<br>迷わない。</h1>
+        <p class="hero-lead">毎日の暮らしにちょうどいいものを、テーマ別にわかりやすく。お買い物マラソンやスーパーセールでも迷わない、おすすめと比較のノートです。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#popular">注目を見る <span>→</span></a>
+          <a class="btn btn-secondary" href="#guides">セール攻略を見る <span>→</span></a>
+        </div>
+        <div class="hero-trust">
+          <span>✓ 無理な買い回りをすすめない</span>
+          <span>✓ 価格・在庫は購入前に最終確認</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="暮らしのお買いものイメージ">
+        <div class="sun-glow"></div>
+        <div class="hero-note">セールのたびに、<br>暮らしが少し良くなる<br>お買いものを。</div>
+        <article class="visual-card visual-card--storage">
+          <div class="visual-icon">▦</div>
+          <div><small>収納・暮らし</small><strong>すっきり整える</strong></div>
+        </article>
+        <article class="visual-card visual-card--kitchen">
+          <div class="visual-icon">◒</div>
+          <div><small>キッチン</small><strong>毎日を使いやすく</strong></div>
+        </article>
+        <article class="visual-card visual-card--daily">
+          <div class="visual-icon">✦</div>
+          <div><small>日用品</small><strong>定番こそ上質に</strong></div>
+        </article>
+        <div class="hero-object hero-object--vase"></div>
+        <div class="hero-object hero-object--cup"></div>
+        <div class="hero-object hero-object--book"></div>
+      </div>
+    </div>
   </section>
 
-  <h2 class="section-title">最近の記事</h2>
-  <div class="card-grid">
-    <div class="card">
-      <div class="cat">マラソン攻略</div>
-      <h3>楽天お買い物マラソンとスーパーセール、何が違うの?</h3>
-      <p>開催頻度・期間・特典の違いから、それぞれの狙いどころを整理しました。</p>
-      <a class="readmore" href="articles/marathon-vs-supersale.html">続きを読む →</a>
+  <section class="section" id="categories">
+    <div class="section-heading">
+      <div>
+        <p class="section-kicker">すぐに探せる</p>
+        <h2>人気のカテゴリから探す</h2>
+      </div>
+      <a class="text-link" href="#guides">読みもの一覧へ <span>→</span></a>
     </div>
-    <div class="card">
-      <div class="cat">マラソン攻略</div>
-      <h3>楽天SPUって結局なに? マラソン前に知っておきたい仕組み</h3>
-      <p>ポイント倍率が積み上がるSPUの基本を、初めての人向けに整理しました。</p>
-      <a class="readmore" href="articles/spu-basics.html">続きを読む →</a>
-    </div>
-    <div class="card">
-      <div class="cat">マラソン攻略</div>
-      <h3>楽天お買い物マラソンの買い回り、何を優先すればいい?</h3>
-      <p>ポイント倍率の仕組みと、まとめ買いに向く日用品カテゴリを整理しました。</p>
-      <a class="readmore" href="articles/marathon-guide.html">続きを読む →</a>
-    </div>
-    <div class="card">
-      <div class="cat">収納・季節の見直し</div>
-      <h3>衣替えのタイミングで見直したい、折りたたみ収納ボックス</h3>
-      <p>季節の変わり目に増えがちな衣類・寝具の収納を、マラソンのタイミングで整える。</p>
-      <a class="readmore" href="articles/storage-review.html">続きを読む →</a>
-    </div>
-  </div>
 
-  <div class="notice">
-    このサイトは楽天アフィリエイトプログラムに参加しています。記事内のリンクを経由して商品を購入されると、
-    運営者に紹介料が支払われる場合があります。価格・在庫状況は変動するため、購入前に商品ページでの最終確認をお願いします。
-  </div>
-</div>
+    <div class="category-grid">
+      <a class="category-card" href="articles/storage-review.html">
+        <span class="category-icon">▦</span>
+        <span><strong>収納・暮らし</strong><small>暮らしを整える定番アイテム</small></span>
+        <b>→</b>
+      </a>
+      <a class="category-card" href="articles/marathon-guide.html">
+        <span class="category-icon">⌂</span>
+        <span><strong>日用品</strong><small>買い回りで失敗しない考え方</small></span>
+        <b>→</b>
+      </a>
+      <a class="category-card" href="articles/marathon-vs-supersale.html">
+        <span class="category-icon">%</span>
+        <span><strong>セール攻略</strong><small>マラソンとスーパーSALEを整理</small></span>
+        <b>→</b>
+      </a>
+      <a class="category-card" href="articles/spu-basics.html">
+        <span class="category-icon">P</span>
+        <span><strong>ポイント</strong><small>SPUの基本をやさしく確認</small></span>
+        <b>→</b>
+      </a>
+    </div>
+  </section>
 
-<footer>
-  <div class="wrap">
-    <div class="other-sites">
-    <p class="other-sites-label">運営者のその他のサイト</p>
-    <div class="other-sites-links">
-      <a href="https://hiroai02.github.io/">🛒 くらしの比較ノート</a>
-      <a href="https://note.com/quiet_dill4282">📝 note</a>
-      <a href="https://hiroai02.github.io/links/">🔗 リンクまとめ</a>
+  <section class="section section-soft" id="popular">
+    <div class="section-heading">
+      <div>
+        <p class="section-kicker">いま見直したい</p>
+        <h2>暮らしの注目テーマ</h2>
+      </div>
+      <p class="section-note">商品データ連携後は、ここに楽天APIの売れ筋・比較候補を表示できます。</p>
+    </div>
+
+    <div class="featured-layout">
+      <article class="feature-large">
+        <div class="feature-badge">EDITOR'S PICK</div>
+        <div class="feature-symbol">▦</div>
+        <div class="feature-content">
+          <p class="mini-label">収納・季節の見直し</p>
+          <h3>衣替えのタイミングで、収納を一度リセット。</h3>
+          <p>サイズ・開き方・キャスター・折りたたみやすさ。買う前に見ておきたいポイントを4つに整理しました。</p>
+          <a class="btn btn-primary btn-small" href="articles/storage-review.html">収納の選び方を見る <span>→</span></a>
+        </div>
+      </article>
+
+      <div class="feature-stack">
+        <a class="mini-feature" href="articles/marathon-guide.html">
+          <div class="mini-feature__icon">01</div>
+          <div><small>買い回りの基本</small><strong>必要なものから埋める。<br>ショップ数を目的にしない。</strong></div>
+          <span>→</span>
+        </a>
+        <a class="mini-feature" href="articles/marathon-vs-supersale.html">
+          <div class="mini-feature__icon">02</div>
+          <div><small>セールの違い</small><strong>マラソンとスーパーSALE、<br>どう使い分ける？</strong></div>
+          <span>→</span>
+        </a>
+        <a class="mini-feature" href="articles/spu-basics.html">
+          <div class="mini-feature__icon">03</div>
+          <div><small>ポイントの基本</small><strong>SPUを先に理解して、<br>セールをシンプルに。</strong></div>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="guides">
+    <div class="section-heading">
+      <div>
+        <p class="section-kicker">特集・読みもの</p>
+        <h2>買う前に、5分だけ読む。</h2>
+      </div>
+      <p class="section-note">仕組みを知ってから選ぶと、セールでも余計な買い物を減らせます。</p>
+    </div>
+
+    <div class="editorial-grid">
+      <article class="editorial-card editorial-card--warm">
+        <div class="editorial-art"><span>SALE</span></div>
+        <div class="editorial-body">
+          <span class="tag">セール攻略</span>
+          <h3>楽天お買い物マラソンとスーパーセール、何が違うの？</h3>
+          <p>開催頻度・期間・特徴の違いから、それぞれの狙いどころを整理。</p>
+          <a href="articles/marathon-vs-supersale.html">続きを読む <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="editorial-card editorial-card--sand">
+        <div class="editorial-art"><span>SPU</span></div>
+        <div class="editorial-body">
+          <span class="tag">ポイント</span>
+          <h3>楽天SPUって結局なに？ マラソン前に知っておきたい仕組み</h3>
+          <p>ポイント倍率が積み上がるSPUの基本を、初めての人向けに。</p>
+          <a href="articles/spu-basics.html">続きを読む <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="editorial-card editorial-card--green">
+        <div class="editorial-art"><span>1→10</span></div>
+        <div class="editorial-body">
+          <span class="tag">買い回り</span>
+          <h3>楽天お買い物マラソンの買い回り、何を優先すればいい？</h3>
+          <p>「ショップ数を増やす」より先に考えたい、買い方の順番。</p>
+          <a href="articles/marathon-guide.html">続きを読む <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="editorial-card editorial-card--blue">
+        <div class="editorial-art"><span>BOX</span></div>
+        <div class="editorial-body">
+          <span class="tag">収納・暮らし</span>
+          <h3>衣替えのタイミングで見直したい、折りたたみ収納ボックス</h3>
+          <p>季節の変わり目に増えがちな衣類・寝具の収納を整える。</p>
+          <a href="articles/storage-review.html">続きを読む <span>→</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="principles">
+      <div>
+        <p class="section-kicker">おかいものびよりの方針</p>
+        <h2>「お得だから買う」より、<br>「必要なものを、お得な時に」。</h2>
+      </div>
+      <div class="principle-list">
+        <div><span>01</span><p><strong>必要性を先に見る</strong><br>買い回りのためだけの商品追加はすすめません。</p></div>
+        <div><span>02</span><p><strong>比較しやすく整理</strong><br>商品そのものだけでなく、選ぶ基準も一緒にまとめます。</p></div>
+        <div><span>03</span><p><strong>最終確認は公式商品ページで</strong><br>価格・在庫・ポイント条件は変動するため、購入直前に確認します。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section disclosure-strip">
+    <p><strong>広告・アフィリエイトについて</strong></p>
+    <p>このサイトは楽天アフィリエイトプログラムに参加しています。記事内のリンクを経由して商品を購入されると、運営者に紹介料が支払われる場合があります。価格・在庫・キャンペーン条件は変動するため、購入前に楽天市場の商品ページ・公式ページで最新情報をご確認ください。</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">⌂</span>
+        <span>
+          <strong class="brand-name">おかいものびより</strong>
+          <small class="brand-tagline">暮らしがちょっと好きになる、楽天お買いものノート</small>
+        </span>
+      </a>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">ホーム</a>
+      <a href="#guides">読みもの</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="https://x.com/hiroMark02" target="_blank" rel="noopener">X / @hiroMark02</a>
+    </div>
+    <div class="footer-sites">
+      <a href="https://hiroai02.github.io/">くらしの比較ノート</a>
+      <a href="https://hiroai02.github.io/links/">リンクまとめ</a>
     </div>
   </div>
-  <p>おかいものびより — 楽天のお買い物マラソン・スーパーセールにあわせたテーマ別お買い物ノート</p>
-    <p><a href="privacy.html">プライバシーポリシー</a> &middot; © 2026 おかいものびより</p>
-  </div>
+  <div class="footer-bottom">© 2026 おかいものびより</div>
 </footer>
-
 </body>
 </html>
